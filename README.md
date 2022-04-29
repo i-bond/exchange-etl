@@ -16,8 +16,8 @@ docker-compose down --volumes --rmi all
 
 Тестирование тасков:  
 ```bash
-airflow tasks test historical_dag historical_rates_task 2021-01-01
 docker exec -it exchange_etl_airflow-worker_1 bash
+airflow tasks test historical_dag historical_rates_task 2021-01-01
 ```
 
 
